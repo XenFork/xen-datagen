@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "xendatagen",
+  "version": "${version}",
+  "name": "xendatagen",
+  "description": "Xen Datagen by Minecraft",
+  "authors": [
+    "baka4n",
+    "XenFork"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/xendatagen/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.xenfork.xendatagen.fabric.XendatagenFabric::init"
+    ],
+    "client": [
+      "io.github.xenfork.xendatagen.fabric.client.XendatagenFabricClient::initClient"
+    ],
+    "fabric-datagen": [
+      "io.github.xenfork.xendatagen.fabric.datagen.XendatagenFabricDatagen"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.6",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
